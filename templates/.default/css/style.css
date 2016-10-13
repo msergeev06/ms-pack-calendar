@@ -1,0 +1,110 @@
+/*
+table border = #9d9d9d;
+выходной = #e40007;
+*/
+
+
+table {
+	padding: 0; margin: 0; border: 0;
+}
+
+.calendar {
+	border: 1px solid #9d9d9d;
+	/*border-left: 1px solid #9d9d9d;
+	border-right: 1px solid #9d9d9d;*/
+	width: 100%;
+	font-size: 12px;
+	border-spacing: 0;
+	table-layout: fixed;
+}
+.calendar thead, .calendar thead tr {
+	margin: 0; padding: 0;
+}
+.calendar th {
+	margin: 0; padding: 0;
+	border-bottom: 1px solid #9d9d9d;
+	border-right: 1px solid #9d9d9d;
+}
+.calendar th.red {
+	color: #e40007;
+}
+.calendar td {
+	vertical-align: top;
+	height: 170px;
+	overflow: hidden;
+	border-bottom: 1px solid #9d9d9d;
+	border-right: 1px solid #9d9d9d;
+}
+.calendar span.day {
+	font-size: 110%;
+	display: block;
+	position: relative;
+	top: 0; left: 0;
+}
+.calendar span.red {
+	color: #e40007;
+}
+.calendar span.light-red {
+	color: #e4b6b6;
+}
+.calendar span.grey {
+	color: #bdbdbd;
+}
+.event {
+	display: block;
+	width: 95%;
+	border: 1px solid;
+	margin: 2px;
+	min-height: 25px;
+	font-size: 110%;
+}
+
+.event .circle {
+	margin: 6px 3px;
+	width: 16px;
+	height: 16px;
+	/*background: red;*/
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	display: block;
+	float: left;
+}
+.event .label {
+	margin: 6px 3px;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+
+}
+.event .name {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 5px;
+}
+.event-add-table {
+	width: 100%;
+	/*table-layout: fixed;*/
+}
+.event-add-table .td-name {
+	width: 250px;
+}
+.event-add-table .td-input {
+	width: 500px;
+}
+.require {
+	color: #ff4500;
+}
+.workday {
+	color: #00008b;
+}
+.weekend {
+	color: #8b0000;
+}
+.hidden {
+	display: none;
+}
+
