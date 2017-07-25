@@ -42,9 +42,13 @@ class Users
 				'filter' => array('USER_ID' => $USER_ID),
 				'limit' => 1
 			));
-			if (isset($res[0]['COLOR']))
+			if ($res && isset($res[0]))
 			{
-				return $res[0]['COLOR'];
+				$res = $res[0];
+			}
+			if (isset($res['COLOR']))
+			{
+				return $res['COLOR'];
 			}
 			else
 			{
